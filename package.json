@@ -1,5 +1,5 @@
 {
-  "name": "product-app",
+  "name": "user-management-system",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -30,6 +30,7 @@
     "@angular/compiler-cli": "^16.0.0",
     "@types/jasmine": "~4.3.0",
     "autoprefixer": "^10.4.19",
+    "cypress": "^13.13.1",
     "daisyui": "^4.12.10",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",

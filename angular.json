@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "product-app": {
+    "user-management-system": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/product-app",
+            "outputPath": "dist/user-management-system",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -68,10 +68,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "product-app:build:production"
+              "browserTarget": "user-management-system:build:production"
             },
             "development": {
-              "browserTarget": "product-app:build:development"
+              "browserTarget": "user-management-system:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "product-app:build"
+            "browserTarget": "user-management-system:build"
           }
         },
         "test": {
