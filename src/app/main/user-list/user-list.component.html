@@ -1,22 +1,22 @@
 <div class="overflow-x-auto p-6 bg-gray-50">
   <table class="table w-full border-collapse border border-gray-300 shadow-lg rounded-md bg-white">
-    <thead class="bg-gray-200 text-gray-700">
+    <thead class="bg-indigo-800 text-white">
       <tr>
-        <th class="border-b border-gray-300 px-6 py-3 text-left font-semibold">First Name</th>
-        <th class="border-b border-gray-300 px-6 py-3 text-left font-semibold">Last Name</th>
-        <th class="border-b border-gray-300 px-6 py-3 text-left font-semibold">Department</th>
+        <th class="border-b border-gray-300 px-6 py-3 text-left font-semibold text-base">First Name</th>
+        <th class="border-b border-gray-300 px-6 py-3 text-left font-semibold text-base">Last Name</th>
+        <th class="border-b border-gray-300 px-6 py-3 text-left font-semibold text-base">Department</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let user of users$ | async" [ngClass]="{'bg-yellow-200': user.isAdmin}">
         <td class="border-b border-gray-300 px-6 py-4">
-          <a [routerLink]="['/details', user.id]" class="text-blue-500 hover:underline">{{ user.firstName }}</a>
+          <a [routerLink]="['/details', user.id]" class="text-black hover:underline font-medium">{{ user.firstName }}</a>
         </td>
         <td class="border-b border-gray-300 px-6 py-4">
-          <a [routerLink]="['/details', user.id]" class="text-blue-500 hover:underline">{{ user.lastName }}</a>
+          <a [routerLink]="['/details', user.id]" class="text-black hover:underline font-medium">{{ user.lastName }}</a>
         </td>
         <td class="border-b border-gray-300 px-6 py-4">
-          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">{{ user.department }}</span>
+          <span class="bg-gray-100 text-black px-2 py-1 rounded-full text-sm font-medium">{{ user.department }}</span>
         </td>
       </tr>
     </tbody>
